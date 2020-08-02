@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles/login_styles.css" type="text/css">
+    <!--font awesome-->
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   
+</head>
+<body>
+    <div class="login">
+        <div class="form-box-1">
+        <div class="header-section">
+            <img src="images/cx.png" alt="">
+            <h1>The place to be</h1>
+        </div>
+        </div>
+      
+        
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+              <button type="button" class="toggle-btn" onclick="login()">Log In</button>  
+              <button type="button" class="toggle-btn"onclick="register()" >Register</button>  
+            </div>
+            <div class="social-icons">
+             <a href=""><i class="fa fa-facebook"></i></a>
+             <a href=""><i class="fa fa-twitter"></i></a>
+             <a href=""><i class="fa fa-google"></i></a>
+             <a href=""><i class="fa fa-instagram"></i></a>
+             <a href=""><i class="fa fa-youtube"></i></a>
+             
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Name" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="Submit" class="submit-btn">LogIn</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Name" required>
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="Submit" class="submit-btn">Register</button>
+            </form>
+             
+            </div> 
+            </div> 
+            <div class="footer">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Adhama 2020 <i class="fa fa-heart-o"></i></div>
+            </div>
+         
+         <script>
+             var x=document.getElementById("login")
+             var y=document.getElementById("register")
+             var z=document.getElementById("btn")
+             function register(){
+                 x.style.left="-450px";
+                 y.style.left="50px";
+                 z.style.left="100px";
+             }
+             function login(){
+                 x.style.left="50px";
+                 y.style.left="450px";
+                 z.style.left="0px";
+             }
+         </script>
+         
+            <div class="clear"></div>
+
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,653 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="{% static 'images/cx.png' %}" style="width:150px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a class="active" href="index.html">home</a></li>
+                                                <li><a href="about.html">about</a></li>
+                                                <li><a href="offers.html">services<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="elements.html">Training and Tools</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="#">Support<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="about.html">Terms of Service</a></li>
+                                                        <li><a href="elements.html">Privacy Policy</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="login">
+                                        <div class="login_btn">
+                                            <a href="first.html">Login | Register</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="slider_active owl-carousel">
+            <div class="single_slider d-flex align-items-left justify-content-center slider_bg_1 overlay">
+                <div class="contact_background"></div>
+                <div class="container" style="padding-top: 350px;">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="slider_text">
+                                <h3>Digital Sales and Marketing</h3>
+                                <p>Growing a Digital presence and increasing Online Engagement</p>
+                                <a href="about.html" class="boxed-btn3">About Us<i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider d-flex align-items-left justify-content-center slider_bg_2 overlay">
+                <div class="contact_background" style="background-image:url(images/cxx.png)"></div>
+                <div class="container" style="padding-top: 350px;">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="slider_text">
+                                <h3>Digital Creatives and Career Guides</h3>
+                                <p>The Best Career Development Support</p><br>
+                                <a href="about.html" class="boxed-btn3">About Us<i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider d-flex align-items-left justify-content-center slider_bg_3 overlay">
+                <div class="contact_background" style="background-image:url(images/cxx.png)"></div>
+                <div class="container" style="padding-top: 350px;">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="slider_text">
+                                <h3>Development</h3>
+                                <p>Expert advice on Career Development</p><br>
+                                <a href="about.html" class="boxed-btn3">About Us<i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- about_area_start -->
+    <div class="about_area ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="about_thumbs">
+                        <div class="large_img_1">
+                            <img src="{% static 'images/pic12.jpg' %}" alt="">
+                        </div>
+                        <div class="small_img_1">
+                            <img src="{% static 'images/immg13.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="about_info">
+                        <div class="section_title mb-20px">
+                            <h3>Who are We?</h3>
+                            <p>ADHAMA specializes in digital and content marketing. We are a team of digital experts who are passionate in sharing the skills about online branding, growing a digital presence and increasing online engagement. Equipping you with practical tools to enable you to attract a large audience and obtain maximum benefits through your online platforms.</p>
+                        </div>
+                        <a href="about.html" class="boxed-btn3">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about_area_end -->
+    <div class="service_area">
+        <div class="container" style="background-color:black;border-radius:20px;">
+            <div class="row justify-content-center ">
+                <div class="col-lg-6 col-md-12">
+                    <div class="section_title text-center mb-55">
+                        <h3 style="color:#0080ff">Career Development</h3>
+                        <p style="color:#fff">Your Support for career development is important to us as we help you increase your motivation as an employee in innovation and production.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_service">
+                         <div class="service_thumb">
+                             <img src="{% static 'images/immg8.jpg' %}" alt="">
+                         </div>
+                         <div class="service_content text-center">
+                            <div class="icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <h3>Digital sales and Marketing</h3>
+                            <p>Refer to promoting and selling of products over the internet using digita devices such as mobiles and PCs.Marketing involves bringing prospects into the funnel while sales involves bringing prospects to customers.</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_service">
+                         <div class="service_thumb">
+                             <img src="{% static 'images/immg7.jpg' %}" alt="">
+                         </div>
+                         <div class="service_content text-center">
+                            <div class="icon">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <h3>Digital Creativity</h3>
+                            <p>What is digital creativity? It involves bringing and using digital tools and technologies to explore creative ideas and new ways of displaying your ideas, research , or work.</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_service">
+                         <div class="service_thumb">
+                             <img src="{% static 'images/immg6.jpg' %}" alt="">
+                         </div>
+                         <div class="service_content text-center">
+                            <div class="icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <h3>Development and Programming</h3>
+                            <p>Development involves creating something or innovating something that already exists. Programming on the other hand mainly focuses on writing a code to create a program or generally a specific application.</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+     <!-- Featured Jobs -->
+     
+    <div class="testimonial_area  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title mb-40 text-center">
+                        <h3 style="color: #0080ff;">Featured Jobs</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testmonial_active owl-carousel">
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="single_testmonial text-center">
+                                        <p>Social Media Managers are in sharge of representing a company across all social channels as the voice of the brand. They respond to comments ,complile campaigns amd create content.Social media managers create and maintain brand...</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="{% static 'images/socialmedia.jpg' %}" style="height:100px;width:100px;border-radius:100%;" alt="">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <h3>Social Media Manager</h3>
+                                            <a href="offers.html" style="border-radius: 10px;" class="genric-btn info-border small">Explore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="single_testmonial text-center">
+                                        <p>A content creator is someone who is responsible for the contribution of information to any media and most especially to digital media. They usually target a specific audience in specific contexts.A content creator produces entertaining</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="{% static 'images/graphics2.jpg' %}" style="height:100px;width:100px;border-radius:100%;"alt="">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <h3>Content Creator</h3>
+                                            <a href="offers.html" style="border-radius: 10px;" class="genric-btn info-border small">Explore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="single_testmonial text-center">
+                                        <p>Digital media managers oversee the development, production, and review of a site's content, from videos to blog posts. These individuals have the experience to oversee a company's digital media efforts, including websites...</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="{% static 'images/graphics.jpg' %}" style="height:100px;width:100px;border-radius:100%;"alt="">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <h3>Digital Media Manager</h3>
+                                            <a href="offers.html" style="border-radius: 10px;" class="genric-btn info-border small">Explore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="single_testmonial text-center">
+                                        <p>A person who does the transcription is known as a transcriptionist or transcriber. Transcription is a challenging and specialist function requiring specific skill sets and the ability to multitask. ... Fast and accurate typing skills...</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="{% static 'images/digital.jpeg' %}" style="height:100px;width:100px;border-radius:100%;"alt="">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <h3>Transcriptions Specialist</h3>
+                                            <a href="offers,html" style="border-radius: 10px;" class="genric-btn info-border small">Explore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- services_area  -->
+    <div class="services">
+        <div class="services_container">
+            <h1 class="heading">The Best Platform to develop yourself</h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="{% static 'images/immg30.jpg' %}" alt="card-background" class="card-img">
+                    <img src="{% static 'images/pic7.jpg' %}" alt="profile image" class="profile-img">
+                    <h1>Practical Tools</h1>
+                    <p class="about">
+                        Get inspired to develop and nurture your digital creativity skills as we equip 
+                        you with practical tips and tricks of content creation and content marketing.
+                    </p>
+                    <a href="#"class="btn1">Explore</a>
+                    
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/immg30.jpg' %}" alt="card-background" class="card-img">
+                    <img src="{% static 'images/pic8.jpg' %}" alt="profile image" class="profile-img">
+                    <h1>Online Presence</h1>
+                    <p class="about">
+                        Our team comprises of knowledgeable experts who will guide you on how to develop 
+                        relevant content and how to attract a large audience to your site.
+                    </p>
+                    <a href="#"class="btn1">Explore</a>
+                   
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/immg30.jpg' %}" alt="card-background" class="card-img">
+                    <img src="{% static 'images/pic9.jpg' %}" alt="profile image" class="profile-img">
+                    <h1>Unlimited Access</h1>
+                    <p class="about">
+                        Through our professional team comprising of digital marketing experts, we share our
+                        ideas and practical skills to help you develop and grow your digital brand.
+                    </p>
+                    <a href="#"class="btn1">Explore</a>
+                  
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/immg30.jpg' %}" alt="card-background" class="card-img">
+                    <img src="{% static 'images/pic10.jpg' %}" alt="profile image" class="profile-img">
+                    <h1>Learn Anywhere</h1>
+                    <p class="about">
+                        We assist digital creators to achieve significant gains through their digital platforms. 
+                        We also equip you with ways to attract a massive online following as well as a lasting impression on your audience.
+                    </p>
+                    <a href="#"class="btn1">Explore</a>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- testimonial_area  -->
+     <section class="ftco-section testimony-section bg-light">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
+          	<span class="subheading" style="color: #fff;font-size:30px;padding-top:30px;">Testimonies</span>
+            <h2 style="color: #fff;padding-top:50px;">Happy Clients and  &amp; Feedback</h2>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="testimonial_area  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title mb-40 text-center">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testmonial_active owl-carousel">
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="single_testmonial text-center">
+                                        <p>Whether you want to learn new skills, make more money, or find a job, we’ll send you emails each week with a clear game plan.</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="{% static 'img/testmonial/1.png' %}" alt="">
+                                            </div>
+                                            <h3>Watson, Web developer</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="single_testmonial text-center">
+                                        <p>When you’re done, you’ll get exclusive discounts and coupons so we can help you keep building your best career.</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="{% static 'img/testmonial/1.png' %}" alt="">
+                                            </div>
+                                            <h3>Edna Williams, Social Media Manager</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="single_testmonial text-center">
+                                        <p>Every day, our career experts help real women reach their goals. Now we'll deliver their advice straight to your inbox.</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="{% static 'img/testmonial/1.png' %}" alt="">
+                                            </div>
+                                            <h3>Edgar Mbidyo, Transcriptionist</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="single_testmonial text-center">
+                                        <p>I've become thoroughly addicted to the newsletter and online resources,"I read about a career in events..</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="{% static 'img/testmonial/1.png' %}" alt="">
+                                            </div>
+                                            <h3>Roger Scott, Marketing Manager</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-10">
+                                    <div class="single_testmonial text-center">
+                                        <p>We’re also including downloadable worksheets, quizzes, and guides, custom-designed and tailored to each track.</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="{% static 'img/testmonial/1.png' %}" alt="">
+                                            </div>
+                                            <h3>Eden Wessex, Programmer</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /testimonial_area  -->
+
+    
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer_background"></div>
+        <div class="row">
+            <!-- Footer Column -->
+            <div class="col-lg-4 footer_column">
+                <div class="footer_col">
+                    <div class="footer_content footer_about">
+                        <div class="logo_container footer_logo">
+                            <div class="logo"><a href="#"><img style="width:150px" src="{% static 'images/cx.png' %}" alt=""></a></div>
+                        </div>
+                        <p class="footer_about_text" style="max-width: 300px;">Lets get interactive. When you folllow us you will increase your followers.</p>
+                        
+                    </div>
+                    <div class="footer_title" style="margin-top: 30px;color:#0080ff;">contact info</div>
+                    <div class="footer_content footer_contact">
+                        <ul class="contact_info_list">
+                            <li class="contact_info_item d-flex flex-row">
+                                
+                                <div class="contact_info_text">2556-808-8613</div>
+                            </li>
+                            <li class="contact_info_item d-flex flex-row">
+                                
+                                <div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
+                            </li>
+                            <li class="contact_info_item d-flex flex-row">
+                                
+                                <div class="contact_info_text"><a href="https://adhama.com">www.adhama.com</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Footer Column -->
+            <div class="col-lg-4 footer_column" style="padding-left: 30px;">
+                <div class="footer_col">
+                    <div class="footer_title" style="padding-left:25px;color:#0080ff;" >tags</div>
+                    <div class="footer_content footer_tags">
+                        <ul class="tags_list clearfix">
+                            <li class="tag_item"><a href="#">Career</a></li>
+                            <li class="tag_item"><a href="#">Web Development</a></li>
+                            <li class="tag_item"><a href="#">Job Seekers</a></li>
+                            <li class="tag_item"><a href="#">Kenyan Jobs</a></li>
+                            <li class="tag_item"><a href="#">Job Search</a></li>
+                            <li class="tag_item"><a href="#">Digital Marketing</a></li>
+                            <li class="tag_item"><a href="#">Content Marketing</a></li>
+                            <li class="tag_item"><a href="#">SEO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Column -->
+            <div class="col-lg-4 footer_column">
+                <div class="footer_col">
+                    <div class="footer_title" style="color:#0080ff;">blog posts</div>
+                    <div class="footer_content footer_blog">
+                        
+                        <!-- Footer blog item -->
+                        <div class="footer_blog_item clearfix">
+                            <div class="footer_blog_image"><img src="{% static 'images/digital.jpeg' %}" alt="https://unsplash.com/@avidenov"></div>
+                            <div class="footer_blog_content">
+                                <div class="footer_blog_title"><a href="blog.html">Characteristics of a great CV</a></div>
+                                <div class="footer_blog_date">Nov 29, 2017</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Footer blog item -->
+                        <div class="footer_blog_item clearfix">
+                            <div class="footer_blog_image"><img src="{% static 'images/immg20.jpg' %}" alt="https://unsplash.com/@deannaritchie"></div>
+                            <div class="footer_blog_content">
+                                <div class="footer_blog_title"><a href="blog.html">5 online courses for an excellent post Covid 19 career </a></div>
+                                <div class="footer_blog_date">Nov 29, 2017</div>
+                            </div>
+                        </div>
+
+                        <!-- Footer blog item -->
+                        <div class="footer_blog_item clearfix">
+                            <div class="footer_blog_image"><img src="{% static 'images/pic3.jpg' %}" alt="https://unsplash.com/@bergeryap87"></div>
+                            <div class="footer_blog_content">
+                                <div class="footer_blog_title"><a href="blog.html">Digital Marketing Job:What it takes</a></div>
+                                <div class="footer_blog_date">Nov 29, 2017</div>
+                            </div>
+                        </div>
+
+                        <div class="newsletter" style="padding-top: 150px;">
+                            <div class="form-element">
+                                <input type="text" class="input-element" placeholder="Email">
+                                <button style="background-color:#0080ff;" class="btn btn-info form-btn">Subscribe to our newsletter</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+       
+</footer>
+
+<!-- Copyright -->
+
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 order-lg-1 order-2  ">
+                <div class="copyright_content d-flex flex-row align-items-center">
+                    <div>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Adhama 2020 <i class="fa fa-heart-o"></i></div>
+                </div>
+            </div>
+    
+            </div>	 
+        
+        </div>
+    </div>
+</div>
+<!-- loader -->
+
+    <!-- JS here -->
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/ajax-form.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/scrollIt.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/gijgo.min.js' %}"></script>
+
+    <!--contact js-->
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.js' %}"></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            disableDaysOfWeek: [0, 0],
+        //     icons: {
+        //      rightIcon: '<span class="fa fa-caret-down"></span>'
+        //  }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+
+        });
+        var timepicker = $('#timepicker').timepicker({
+         format: 'HH.MM'
+     });
+    </script>
+</body>
+
+</html>
