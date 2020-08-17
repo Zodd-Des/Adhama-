@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Yeseva+One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Yeseva+One&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
 .flex-center-start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,7 +305,7 @@ h3 {
   color: #EB592D;
   display: inline-block;
   padding: 18px 44px;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -339,7 +339,7 @@ h3 {
   border: 1px solid transparent;
   color: #000;
   padding: 19px 43px 23px 43px;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   display: inline-block;
   line-height: 1;
 }
@@ -360,7 +360,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 18px 24px;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -424,7 +424,7 @@ h3 {
   font-weight: 400;
   line-height: 51px;
   color: #222222;
-  font-family: "Yeseva One", cursive;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 21px;
 }
 
@@ -833,24 +833,24 @@ h3 {
 .header-area .main-header-area .login .socail_links ul li a:hover {
   color: #fff;
 }
-
 .header-area .main-header-area .login .login_btn a {
   background: #0080ff;
   font-size: 16px;
   font-weight: 400;
   border: 1px solid transparent;
   color: #fff;
-  padding: 15px 40px 20px 40px;
+  padding: 10px 20px 10px 20px;
   font-family: "Roboto", sans-serif;
   display: inline-block;
   line-height: 1;
   border-radius: 10px;
 }
 .header-area .main-header-area .login .login_btn a:hover {
-  background: transparent;
-  color: #fff;
+  background: white;
+  color:black;
   border: 1px solid #010080;
 }
+
 
 .header-area .main-header-area .main-menu {
   text-align: center;
@@ -875,7 +875,7 @@ h3 {
   }
 }
 .header-area .main-header-area .main-menu ul li a {
-  color: #0080ff;
+  color: #ffffff;
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 400;
@@ -913,14 +913,14 @@ h3 {
   }
 }
 .header-area .main-header-area .main-menu ul li a:hover {
-  color: #fff;
+  color: #0080ff;
 }
 
 .header-area .main-header-area .main-menu ul li .submenu {
   position: absolute;
   left: 0;
   top: 140%;
-  background: #0080ff;
+  background: black;
   width: 200px;
   border-radius: 10px;
   z-index: 2;
@@ -953,7 +953,7 @@ h3 {
 }
 
 .header-area .main-header-area .main-menu ul li .submenu li:hover a {
-  color: #000;
+  color: #0080ff;
 }
 .header-area .main-header-area .main-menu ul li:hover > .submenu {
   opacity: 1;
@@ -1017,6 +1017,7 @@ h3 {
   background-image: url(../images/immg36.jpg);
 }
 
+
 .slider_area .single_slider {
   height: 900px;
   background-size: cover;
@@ -1025,19 +1026,28 @@ h3 {
 
 @media (max-width: 767px) {
   .slider_area .single_slider {
-    height: 600px;
+    height: 450px;
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 457px) {
+  .slider_area .single_slider {
+    height: 380px;
+    background-size: 100% 100%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .slider_area .single_slider {
-    height: 600px;
+    height: 550px;
+    background-size: 100% 100%;
   }
 }
 .slider_area .single_slider .slider_text h3 {
   color: #0080ff;
-  font-family: "Yeseva One", cursive;
-  font-size: 55px;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
   font-weight: 600;
   margin-bottom: 4px;
   line-height: 75px;
@@ -1047,6 +1057,10 @@ h3 {
   .slider_area .single_slider .slider_text h3 {
     font-size: 33px;
     line-height: 40px;
+    font-size: 15px;
+  }
+  .slider_bg_2{
+    background-size: cover;
   }
 }
 
@@ -1123,6 +1137,56 @@ h3 {
 	opacity: 0.8;
 }
 
+	
+@media only screen and (max-width: 768px)
+{
+	.contact_background{
+		height: 65vh;
+		top: 0;
+
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	.contact_background{
+		height: 65vh;
+		top: 0;
+
+	}
+}
+
+@media only screen and (max-width: 1600px)
+{
+	.contact_background{
+		height: 105vh;
+		top: 0;
+
+	}
+}
+@media only screen and (max-width: 1440px)
+{
+	.contact_background{
+		height: 95vh;
+		top: 0;
+
+	}
+}
+
+@media only screen and (max-width: 1380px)
+{
+	.contact_background{
+		height: 85vh;
+		top: 0;
+
+  }
+  
+@media (max-width: 457px){
+  .contact_background{
+    height: 45vh;
+  }
+}
+}
 /*********************************
 6. Blog
 *********************************/
@@ -1404,11 +1468,13 @@ h3 {
 .latest_post_image
 {
 	float: left;
-	z-index: 2;
+  z-index: 2;
+  padding-left: 98px;
 }
 .latest_post_content
 {
-	padding-left: 98px;
+  padding-left: 98px;
+  display: inline-block;
 }
 .latest_post_title a
 {
@@ -1418,7 +1484,7 @@ h3 {
 }
 .latest_post_title a:hover
 {
-	color: #fff;
+  color: #001080;
 }
 .latest_post_meta
 {
@@ -1484,7 +1550,7 @@ h3 {
   transition: all .5s;
 }
 
-  /*********************************
+/*********************************
   13. Footer
   *********************************/
   
@@ -1514,7 +1580,6 @@ h3 {
 	  color: #FFFFFF;
 	  text-transform: uppercase;
   }
-  
   
   /*********************************
   13.1 Footer - About
@@ -1550,7 +1615,7 @@ h3 {
 	  -ms-transition: all 200ms ease;
 	  -o-transition: all 200ms ease;
 	  transition: all 200ms ease;
-	  margin-right: 9px;
+    margin-right: 9px;
   }
   .footer_social_item:last-child
   {
@@ -1589,7 +1654,7 @@ h3 {
   {
 	  color:  #0080ff;
   }
- 
+  
   /*********************************
   13.2 Footer - Blog
   *********************************/
@@ -1659,8 +1724,7 @@ h3 {
   {
 	  height: 35px;
 	  margin-right: 9px;
-	  margin-bottom: 9px;
-	border-radius: 20px;
+    margin-bottom: 9px;
 	  -webkit-transition: all 200ms ease;
 	  -moz-transition: all 200ms ease;
 	  -ms-transition: all 200ms ease;
@@ -1669,7 +1733,7 @@ h3 {
   }
   .tag_item:hover
   {
-	  background:  #0080ff;
+	  color:  #0080ff;
   }
   .tag_item a
   {
@@ -1677,9 +1741,13 @@ h3 {
 	  font-size: 12px;
 	  font-weight: 600;
 	  color: #FFFFFF;
-	  line-height: 25px;
+	  line-height: 33px;
 	  padding-left: 25px;
 	padding-right: 25px;
+  }
+  .tag_item a:hover{
+    color: #0080ff;
+
   }
   
   /*********************************
@@ -1710,7 +1778,9 @@ h3 {
   {
 	  color: #FFFFFF;
 	  line-height: 2.14;
-	  margin-top: -4px;
+    margin-top: -4px;
+    font-size: 15px;
+    font-weight: normal;
   }
   .contact_info_item:hover .contact_info_text,
   .contact_info_item:hover .contact_info_text a
@@ -1724,15 +1794,16 @@ h3 {
   
   .copyright
   {
-	  background:  black;
+    background:  black;
+   
   }
   .copyright_content
   {
-	  height: 52px;
+    height: 30px;
   }
   .copyright_content div
   {
 	  font-size: 12px;
-	  font-weight: 600;
+	  font-weight: 300;
 	  color: #0080ff;
   }
