@@ -2,19 +2,19 @@ from django.db import models
 
 # Create your models here.
 
-class Job:
-    id : int
-    name : str
-    img : str
-    desc : str
+class Job(models.Model):
 
-class Testimony:
-    id : int
-    name : str
-    name2 : str
-    img : str
-    desc : str
+    name = models.CharField(max_length=100)
+    img = models.ImageField(upload_to='pics')
+    desc = models.TextField()
 
+class Testimony(models.Model):
+
+    name = models.CharField(max_length=100)
+    name2 = models.CharField(max_length=100)
+    img = models.ImageField(upload_to='pics')
+    desc = models.TextField()
+   
 
 
 

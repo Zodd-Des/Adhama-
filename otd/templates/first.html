@@ -1,21 +1,22 @@
+{% load static %}
+{% static "images" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="styles/login_styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/login_styles.css' %}">
+    <title>Login | Register</title>
 </head>
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
-                
+            <form action="register" method="post">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
@@ -23,15 +24,16 @@
                     <a href="#" class="social"><i class="fa fa-twitter"></i></a>
                 </div>
                 <span>or use your email for registration</span>
+                {% csrf_token %}
                 <input type="text" placeholder="Name" />
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
-                <input type="password" placeholder="Confirm assword" />
+                <input type="password" placeholder="Confirm Password" />
                 <button>Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="login" method="post">
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
@@ -39,6 +41,7 @@
                     <a href="#" class="social"><i class="fa fa-twitter"></i></a>
                 </div>
                 <span>or use your account</span>
+                {% csrf_token %}
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
@@ -48,13 +51,13 @@
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <img src="images/cx.png" alt="" style="width: 100px;">
+                    <img src="{% static 'images/cx.png' %}" alt="" style="width: 100px;">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
                     <button class="ghost" id="signIn">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <img src="images/cx.png" alt="" style="width: 100px;">
+                    <img src="{% static 'images/cx.png' %}" alt="" style="width: 100px;">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with us</p>
                     <button class="ghost" id="signUp">Sign Up</button>
@@ -65,7 +68,7 @@
     <footer>
         <p>Created with <i class="fa fa-heart"></i> by ADHAMA</p>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 
 </html>
