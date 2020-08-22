@@ -1,4 +1,5 @@
-
+{% load static %}
+{% static "images" as baseUrl %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,26 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="author" content="Free-Template.co" />
-    <link rel="shortcut icon" href="ftco-32x32.png">
-    <link rel="stylesheet" href="css/custom-bs.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="fonts/line-icons/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="fonts/line-icons/style.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css"> 
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="{% static 'css/custom-bs.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/line-icons/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/line-icons/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gijgo.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
 
     
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="styles/offers_styles.css">    
+    <link rel="stylesheet" href="{% static 'styles/offers_styles.css' %}">    
   </head>
   <body>
     
@@ -38,7 +37,7 @@
                       <div class="col-xl-3 col-lg-3">
                           <div class="logo-img">
                               <a href="index.html">
-                                <img src="images/cx.png" style="width:200px;" alt="">
+                                <img src="{% static 'images/cx.png' %}" style="width:200px;" alt="">
                               </a>
                           </div>
                       </div>
@@ -84,10 +83,10 @@
   </header>
   <!-- header-end -->
     <!-- HOME -->
-    <section class="home-section section-hero overlay bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
+    <section class="home-section section-hero overlay bg-image" style="background-image: url({% static 'images/hero_1.jpg' %});" id="home-section">
      
       <div class="container">
-        <div class="contact_background" style="background-image:url(images/cxx.png)"></div>
+        <div class="contact_background" style="background-image:url({% static 'images/cxx.png' %})"></div>
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12">
             <div class="mb-5 text-center">
@@ -148,10 +147,10 @@
 
     <!-- services -->
 	<div class="services_container">
-		<div class="services_background" style="background-image:url(images/immg29.jpg)"></div>
+		<div class="services_background" style="background-image:url({% static 'images/immg29.jpg' %})"></div>
         <div class="card">
             <div class="imgBx" data-text="Learn">
-                <img src="images/book.png">
+                <img src="{% static 'images/book.png' %}">
             </div>
             <div class="content">
                 <div>
@@ -163,7 +162,7 @@
         </div>
         <div class="card">
             <div class="imgBx" data-text="Analytics">
-                <img src="images/strategic-plan.png">
+                <img src="{% static 'images/strategic-plan.png' %}">
             </div>
             <div class="content">
                 <div>
@@ -175,7 +174,7 @@
         </div>
         <div class="card">
             <div class="imgBx" data-text="Research">
-                <img src="images/webinar.png">
+                <img src="{% static 'images/webinar.png' %}">
             </div>
             <div class="content">
                 <div>
@@ -187,7 +186,7 @@
         </div>
         <div class="card">
             <div class="imgBx" data-text="Access">
-                <img src="images/key.png">
+                <img src="{% static 'images/key.png' %}">
             </div>
             <div class="content">
                 <div>
@@ -207,14 +206,14 @@
 
 <footer class="footer">
     <div class="container">
-        <div class="footer_background" style="background-image:url(images/cy.png)"></div>
+        <div class="footer_background" style="background-image:url({% static 'images/cy.png' %})"></div>
         <div class="row">
             <!-- Footer Column -->
             <div class="col-lg-4 footer_column">
                 <div class="footer_col">
                     <div class="footer_content footer_about">
                         <div class="logo_container footer_logo">
-                            <div class="logo"><a href="#"><img style="width:150px" src="images/cx.png" alt=""></a></div>
+                            <div class="logo"><a href="#"><img style="width:150px" src="{% static 'images/cx.png' %}" alt=""></a></div>
                         </div>
                         <p class="footer_about_text" style="max-width: 300px;">Lets get interactive. When you folllow us you will increase your followers.</p>
                        
@@ -275,7 +274,7 @@
                         
                         <!-- Footer blog item -->
                         <div class="footer_blog_item clearfix">
-                            <div class="footer_blog_image"><img src="images/digital.jpeg" alt="https://unsplash.com/@avidenov"></div>
+                            <div class="footer_blog_image"><img src="{% static 'images/digital.jpeg' %}" alt="https://unsplash.com/@avidenov"></div>
                             <div class="footer_blog_content">
                                 <div class="footer_blog_title"><a href="blog.html">Characteristics of a great CV</a></div>
                                 <div class="footer_blog_date">Nov 29, 2017</div>
@@ -284,7 +283,7 @@
                         
                         <!-- Footer blog item -->
                         <div class="footer_blog_item clearfix">
-                            <div class="footer_blog_image"><img src="images/immg20.jpg" alt="https://unsplash.com/@deannaritchie"></div>
+                            <div class="footer_blog_image"><img src="{% static 'images/immg20.jpg' %}" alt="https://unsplash.com/@deannaritchie"></div>
                             <div class="footer_blog_content">
                                 <div class="footer_blog_title"><a href="blog.html">5 online courses for an excellent post Covid 19 career </a></div>
                                 <div class="footer_blog_date">Nov 29, 2017</div>
@@ -293,7 +292,7 @@
 
                         <!-- Footer blog item -->
                         <div class="footer_blog_item clearfix">
-                            <div class="footer_blog_image"><img src="images/pic3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
+                            <div class="footer_blog_image"><img src="{% static 'images/pic3.jpg' %}" alt="https://unsplash.com/@bergeryap87"></div>
                             <div class="footer_blog_content">
                                 <div class="footer_blog_title"><a href="blog.html">Digital Marketing Job:What it takes</a></div>
                                 <div class="footer_blog_date">Nov 29, 2017</div>
@@ -336,49 +335,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
     <!-- SCRIPTS -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/stickyfill.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.animateNumber.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>    
-<script src="js/bootstrap-select.min.js"></script>    
-<script src="js/custom.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.slicknav.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/gijgo.min.js"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/stickyfill.min.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>    
+<script src="{% static 'js/bootstrap-select.min.js' %}"></script>    
+<script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/gijgo.min.js' %}"></script>
 
 <!--contact js-->
-<script src="js/contact.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/jquery.form.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/mail-script.js"></script>
+<script src="{% static 'js/contact.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/jquery.form.js' %}"></script>
+<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/mail-script.js' %}"></script>
 
-<script src="js/main.js"></script>
-<script>
-	$('#datepicker').datepicker({
-		iconsLibrary: 'fontawesome',
-		disableDaysOfWeek: [0, 0],
-	//     icons: {
-	//      rightIcon: '<span class="fa fa-caret-down"></span>'
-	//  }
-	});
-	$('#datepicker2').datepicker({
-		iconsLibrary: 'fontawesome',
-		icons: {
-		 rightIcon: '<span class="fa fa-caret-down"></span>'
-	 }
+<script src="{% static 'js/main.js' %}"></script>
 
-	});
-	var timepicker = $('#timepicker').timepicker({
-	 format: 'HH.MM'
- });
-</script>
 
 
 </body>
