@@ -16,7 +16,8 @@
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="register" method="post">
+            <form action="first" method="post">
+                {% csrf_token %}
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
@@ -24,16 +25,17 @@
                     <a href="#" class="social"><i class="fa fa-twitter"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                {% csrf_token %}
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <input type="password" placeholder="Confirm Password" />
+               
+                <input type="text" name="username" placeholder="Username" />
+                <input type="email" name="email" placeholder="Email" />
+                <input type="password" name="password1" placeholder="Password" />
+                <input type="password" name="password2" placeholder="Confirm Password" />
                 <button>Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="login" method="post">
+            <form action="first" method="post">
+                {% csrf_token %}
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
@@ -41,9 +43,9 @@
                     <a href="#" class="social"><i class="fa fa-twitter"></i></a>
                 </div>
                 <span>or use your account</span>
-                {% csrf_token %}
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+               
+                <input type="text" name="username" placeholder="Username" />
+                <input type="password" name="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
                 <button>Sign In</button>
             </form>
@@ -69,6 +71,12 @@
         <p>Created with <i class="fa fa-heart"></i> by ADHAMA</p>
     </footer>
     <script src="{% static 'js/index.js' %}"></script>
+    
+    <div class="message" style="color: red;">
+        {% for message in messages %}
+        <h4> {{message}} </h4>
+        {% endfor %}
+    </div>
 </body>
 
 </html>
