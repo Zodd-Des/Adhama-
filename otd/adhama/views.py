@@ -21,13 +21,13 @@ def about(request):
 def offers(request):
 
     return render(request, "offers.html")
-    
+
        
 def elements(request):
 
     return render(request, "elements.html")
     
-    
+      
 def blog(request):
 
     return render(request, "blog.html")

@@ -3,41 +3,39 @@ from django.contrib import messages
 from django.contrib.auth.models import User, auth
 
 # Create your views here.
-
+        
+   
 def first(request):
-
     if request.method == 'POST':
         username = request.POST['username']
-        email = request.POST['email']
         password1 = request.POST['password1']
         password2 = request.POST['password2']
+        email = request.POST['email']
 
         if password1 == password2:
             if User.objects.filter(username=username).exists():
                 messages.info(request,'Username already exists')
-                return redirect('/accounts/first')
+                return redirect('first')
             elif User.objects.filter(email=email).exists():
                 messages.info(request,'Email taken')
-                return redirect('/accounts/first')
+                return redirect('first')
             else:
                 user = User.objects.create_user(username=username, password=password2, email=email)
                 user.save();
                 messages.info(request,'User created')
-                return redirect('/accounts/first')
+                return redirect('login')
                 
             
         else:
             messages.info(request,'Password not matching')
-            return redirect('/accounts/first')
+            return redirect('first')
         return redirect('index')    
 
     else:    
         return render(request,"first.html")
 
-
         
-
-def first(request):
+def login(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
@@ -49,8 +47,8 @@ def first(request):
             return redirect('elements')
         else:
             messages.info(request, 'invalid credentials')
-            return redirect('/accounts/first')
+            return redirect('login')
     
     
     else:
-        return render(request, 'first.html')
+        return render(request, 'login.html')
