@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from .models import Job
 from .models import Testimony
+from .models import Blogs
+from .models import LatestPosts
+from .models import Training
 
 # Create your views here.
 
@@ -24,13 +27,19 @@ def offers(request):
 
        
 def elements(request):
+    
+    courses = Training.objects.all()
 
-    return render(request, "elements.html")
+    return render(request, "elements.html", {'courses' : courses})
     
       
 def blog(request):
 
-    return render(request, "blog.html")
+
+    posts = Blogs.objects.all()
+    lposts = LatestPosts.objects.all()
+
+    return render(request, "blog.html", {'posts' : posts , 'lposts' : lposts})
     
     
 def contact(request):

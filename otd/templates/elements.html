@@ -101,95 +101,62 @@
     <!-- bradcam_area_end -->
 
 	<!-- Start Sample Area -->
-	<section class="sample-text-area">
+	<section class="sample-text-area" style="background-color: black;margin:20px 0">
 		<div class="container box_1170">
-			<h3 class="text-heading">Digital Sales and Marketing</h3>
-			<p class="sample-text">
-				Every avid independent filmmaker has <b>Bold</b> about making that <i>Italic</i> interest documentary,
-				or short
-				film to show off their creative prowess. Many have great ideas and want to “wow”
-				the<sup>Superscript</sup> scene,
-				or video renters with their big project. But once you have the<sub>Subscript</sub> “in the can” (no easy
-				feat), how
-				do you move from a <del>Strike</del> through of master DVDs with the <u>“Underline”</u> marked
-				hand-written title
-				inside a secondhand CD case, to a pile of cardboard boxes full of shiny new, retail-ready DVDs, with UPC
-				barcodes
-				and polywrap sitting on your doorstep? You need to create eye-popping artwork and have your project
-				replicated.
-				Using a reputable full service DVD Replication company like PacificDisc, Inc. to partner with is
-				certainly a
-				helpful option to ensure a professional end result, but to help with your DVD replication project, here
-				are 4 easy
-				steps to follow for good DVD replication results:
+			<h3 class="text-heading" style="color: #0080ff;text-transform:uppercase;font-size:25px;text-align:center;">Digital Sales and Marketing</h3>
+			<p style="font-size:15px;color:white;" class="sample-text">
+				As our world is becoming more and more digitised in every aspect, digital marketing has grown into a booming industry. The rise of different choices of career in digital marketing are signaling this boom.
 
+Hiring activity in the digital space is strong, specifically in financial services, insurance and retail, where there has been significant investment in digital teams. This is true because of the strong competition across businesses. Companies are hungry to acquire, convert and retain customers quicker and cheaper than their competitors; and they undoubtedly need digital marketing help to do so.
+
+The increase in demand for strong digital content and social managers has not been a coincidence either. Companies are becoming more aware of the need to integrate content and social strategies to create better customer engagement and brand awareness. Accordingly, digital marketers’ salaries are increasing as businesses compete for highly sought after candidates in a skills-short market. 
 			</p>
 		</div>
 	</section>
 	<!-- End Sample Area -->
 
-
-    <div class="offers_container">
-        <div class="box bg1">
-            <div class="box-sub">Programming</div>
-            <div class="circle c1"><i class="fa fa-desktop"></i></div>
-            <a href="#">Start Course</a>
-        </div>
-        <div class="box bg2">
-            
-            <div class="box-sub">SEO optimization</div>
-            <div class="circle c2"><i class="icon-cup"></i></div>
-            <a href="#">Start Course</a>
-        </div>
-        <div class="box bg3">
-            
-            <div class="box-sub">Transcription specialist</div>
-            <div class="circle c3"><i class="icon-drink"></i></div>
-            <a href="#">Start Course</a>
-        </div>
-        <div class="box bg4">
-            <div class="box-sub">Content Writer</div>
-            <div class="circle c1"><i class="icon-bowl"></i></div>
-            <a href="#">Start Course</a>
-        </div>
-        <div class="box bg5">
-            
-            <div class="box-sub">Graphic Designer</div>
-            <div class="circle c2"><i class="icon-cup"></i></div>
-            <a href="#">Start Course</a>
-        </div>
-        <div class="box bg6">
-            
-            <div class="box-sub">Digital Media Manager</div>
-            <div class="circle c3"><i class="icon-drink"></i></div>
-            <a href="#">Start Course</a>
-        </div>
-        <div class="box bg7">
-            <div class="box-sub">Web Developer</div>
-            <div class="circle c1"><i class="icon-bowl"></i></div>
-            <a href="#">Start Course</a>
-        </div>
-        <div class="box bg8">
-            
-            <div class="box-sub">Brand Manager</div>
-            <div class="circle c2"><i class="icon-cup"></i></div>
-            <a href="#">Start Course</a>
-        </div>
-        <div class="box bg9">
-            
-            <div class="box-sub">Social Media Manager</div>
-            <div class="circle c3"><i class="icon-drink"></i></div>
-            <a href="#">Start Course</a>
+    <section class="site-section">
+        <div class="container">
+  
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center">
+              <h2 class="section-title mb-2"  style="color: #0080ff;">10 Jobs Listed</h2>
+            </div>
+          </div>
+          {% for course in courses %}
+          <ul class="job-listings mb-5">
+            <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+              <a href="job-single.html"></a>
+              <div class="job-listing-logo">
+                <img style="width:300px;height:230px;border-radius:50%;" src="{{course.img.url}}" alt="course Image" class="img-fluid">
+              </div>
+  
+              <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+                <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+                  <h2 style="color: #0080ff;">{{course.name}}</h2>
+                </div>
+                <div class="job-listing-meta">
+                  <a href="#" class="badge badge-info">Start Course</a>
+                </div>
+              </div>
+              
+            </li>
+          </ul>
+          <hr>
+          {% endfor %}
+  
+  
         </div>
         
-        <div class="box bg10">
-            
-            <div class="box-sub">Digiatl Marketing Specialist</div>
-            <div class="circle c3"><i class="icon-drink"></i></div>
-            <a href="#">Start Course</a>
-        </div>
+  
+      <div class="training_navigation">
+        <ul>
+            <li class="training_dot active"><div></div>01.</li>
+            <li class="training_dot"><div></div>02.</li>
+            <li class="training_dot"><div></div>03.</li>
+        </ul>
     </div>
-	
+      </section>
 			
 <!-- Footer -->
 

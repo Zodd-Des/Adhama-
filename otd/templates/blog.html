@@ -106,7 +106,8 @@
                 </div>
             </div>
         </div>
-    </div>
+	</div>
+	
     <!-- slider_area_end -->	
 	<!-- Blog -->
 
@@ -120,66 +121,31 @@
 					
 					<div class="blog_post_container">
 
+
+                        {% for post in posts %}
 						<!-- Blog Post -->
 						
 						<div class="blog_post">
 							<div class="blog_post_image">
-								<img src="{% static 'images/immg22.jpg' %}" alt="https://unsplash.com/@anniespratt">
+								<img src="{{post.img.url}}" alt="Blog Pic">
+								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
+									<div class="blog_post_month">{{post.date}}</div>
+								</div>
 							</div>
 							<div class="blog_post_meta">
 								<ul>
-									<li class="blog_post_meta_item"><a href="">by Lore Papp</a></li>
+									<li class="blog_post_meta_item"><a href="">{{post.name}}</a></li>
 									<li class="blog_post_meta_item"><a href="">Uncategorized</a></li>
 									<li class="blog_post_meta_item"><a href="">3 Comments</a></li>
 								</ul>
 							</div>
-							<div class="blog_post_title"><a href="#">Digital Marketing Job:What it takes</a></div>
+							<div class="blog_post_title"><a href="#">{{post.title}}</a></div>
 							<div class="blog_post_text">
-								<p style="font-size: 15px;">Through our professional team comprising of digital marketing experts, we share our ideas and practical skills to help you develop and grow your digital brand.</p>
+								<p style="font-size: 15px;">{{post.descr}}</p>
 							</div>
 							<div class="blog_post_link"><a href="#">read more</a></div>
 						</div>
-
-						<!-- Blog Post -->
-						
-						<div class="blog_post">
-							<div class="blog_post_image">
-								<img src="{% static 'images/pic6.jpg' %}" alt="https://unsplash.com/@tschax">
-							</div>
-							<div class="blog_post_meta">
-								<ul>
-									<li class="blog_post_meta_item"><a href="">by Lore Papp</a></li>
-									<li class="blog_post_meta_item"><a href="">Uncategorized</a></li>
-									<li class="blog_post_meta_item"><a href="">3 Comments</a></li>
-								</ul>
-							</div>
-							<div class="blog_post_title"><a href="#">Characteristics of a great CV</a></div>
-							<div class="blog_post_text">
-								<p style="font-size: 15px;">We assist digital creators to achieve significant gains through their digital platforms. We also equip you with ways to attract a massive online following as well as a lasting impression on your audience.</p>
-							</div>
-							<div class="blog_post_link"><a href="#">read more</a></div>
-						</div>
-
-						<!-- Blog Post -->
-						
-						<div class="blog_post">
-							<div class="blog_post_image">
-								<img src="{% static 'images/pic5.jpg' %}" alt="https://unsplash.com/@stilclassics">
-							</div>
-							<div class="blog_post_meta">
-								<ul>
-									<li class="blog_post_meta_item"><a href="">by Lore Papp</a></li>
-									<li class="blog_post_meta_item"><a href="">Uncategorized</a></li>
-									<li class="blog_post_meta_item"><a href="">3 Comments</a></li>
-								</ul>
-							</div>
-							<div class="blog_post_title"><a href="#">5 online courses for an excellent post Covid 19 career </a></div>
-							<div class="blog_post_text">
-								<p style="font-size: 15px;">Get inspired to develop and nurture your digital creativity skills as we equip you with practical tips and tricks of content creation and content marketing. </p>
-							</div>
-							<div class="blog_post_link"><a href="#">read more</a></div>
-						</div>
-
+                        {% endfor %}
 					</div>
 						
 					<div class="blog_navigation">
@@ -190,7 +156,6 @@
 						</ul>
 					</div>
 				</div>
-
 				<!-- Blog Sidebar -->
 
 				<div class="col-lg-4 sidebar_col">
@@ -230,9 +195,9 @@
 						<div class="sidebar_title">Archives</div>
 						<div class="sidebar_list">
 							<ul>
-								<li><a href="#">March 2017</a></li>
-								<li><a href="#">April 2017</a></li>
-								<li><a href="#">May 2017</a></li>
+								<li><a href="#">March 2020</a></li>
+								<li><a href="#">April 2020</a></li>
+								<li><a href="#">May 2020</a></li>
 							</ul>
 						</div>
 					</div>
@@ -259,106 +224,22 @@
 						<div class="sidebar_title">Latest Posts</div>
 						<div class="latest_posts_container">
 							<ul>
-
+                            {% for lpost in lposts %}
 								<!-- Latest Post -->
 								<li class="latest_post clearfix">
 									<div class="latest_post_image">
-										<a href="#"><img src="{% static 'images/learn.jpeg' %}" style="width: 200px;border-radius:10px;"alt=""></a>
+										<a href="#"><img src="{{lpost.img.url}}" style="width: 200px;border-radius:10px;"alt=""></a>
 									</div>
 									<div class="latest_post_content">
-										<div class="latest_post_title trans_200"><a href="#">A simple blog post</a></div>
+										<div class="latest_post_title trans_200"><a href="#"></a></div>
 										<div class="latest_post_meta">
-											<div class="latest_post_author trans_200"><a href="#">by Jane Smith</a></div>
-											<div class="latest_post_date trans_200"><a href="#">Aug 25, 2020</a></div>
+											<div class="latest_post_author trans_200"><a href="#">{{lpost.title}}</a></div>
+											<div class="latest_post_date trans_200"><a href="#">{{lpost.descr}}</a></div>
 										</div>
 									</div>
 								</li>
-
-								<!-- Latest Post -->
-								<li class="latest_post clearfix">
-									<div class="latest_post_image">
-										<a href="#"><img src="{% static 'images/mission.jpeg' %}"style="width: 200px;border-radius:10px;"alt=""></a>
-									</div>
-									<div class="latest_post_content">
-										<div class="latest_post_title trans_200"><a href="#">Dream Career for you</a></div>
-										<div class="latest_post_meta">
-											<div class="latest_post_author trans_200"><a href="#">by Jane Smith</a></div>
-											<div class="latest_post_date trans_200"><a href="#">Aug 25, 2020</a></div>
-										</div>
-									</div>
-								</li>
-
-								<!-- Latest Post -->
-								<li class="latest_post clearfix">
-									<div class="latest_post_image">
-										<a href="#"><img src="{% static 'images/study1.jpeg' %}" style="width: 200px;border-radius:10px;"alt=""></a>
-									</div>
-									<div class="latest_post_content">
-										<div class="latest_post_title trans_200"><a href="#">Tips to Study Smart</a></div>
-										<div class="latest_post_meta">
-											<div class="latest_post_author trans_200"><a href="#">by Jane Smith</a></div>
-											<div class="latest_post_date trans_200"><a href="#">Aug 25, 2020</a></div>
-										</div>
-									</div>
-								</li>
-
-								<!-- Latest Post -->
-								<li class="latest_post clearfix">
-									<div class="latest_post_image">
-										<a href="#"><img style="width: 200px;border-radius:10px;" src="{% static 'images/immg35.jpg' %}" alt=""></a>
-									</div>
-									<div class="latest_post_content">
-										<div class="latest_post_title trans_200"><a href="#">How to pick your Career</a></div>
-										<div class="latest_post_meta">
-											<div class="latest_post_author trans_200"><a href="#">by Jane Smith</a></div>
-											<div class="latest_post_date trans_200"><a href="#">Aug 25, 2020</a></div>
-										</div>
-									</div>
-								</li>
-
+                            {% endfor %}
 								
-								<!-- Latest Post -->
-								<li class="latest_post clearfix">
-									<div class="latest_post_image">
-										<a href="#"><img src="{% static 'images/mission.jpeg' %}" style="width: 200px;border-radius:10px;" alt=""></a>
-									</div>
-									<div class="latest_post_content">
-										<div class="latest_post_title trans_200"><a href="#">Dream Career for you</a></div>
-										<div class="latest_post_meta">
-											<div class="latest_post_author trans_200"><a href="#">by Jane Smith</a></div>
-											<div class="latest_post_date trans_200"><a href="#">Aug 25, 2020</a></div>
-										</div>
-									</div>
-								</li>
-									<!-- Latest Post -->
-									<li class="latest_post clearfix">
-										<div class="latest_post_image">
-											<a href="#"><img src="{% static 'images/study1.jpeg' %}" style="width: 200px;border-radius:10px;"alt=""></a>
-										</div>
-										<div class="latest_post_content">
-											<div class="latest_post_title trans_200"><a href="#">Tips to Study Smart</a></div>
-											<div class="latest_post_meta">
-												<div class="latest_post_author trans_200"><a href="#">by Jane Smith</a></div>
-												<div class="latest_post_date trans_200"><a href="#">Aug 25, 2020</a></div>
-											</div>
-										</div>
-									</li>
-
-									
-								<!-- Latest Post -->
-								<li class="latest_post clearfix">
-									<div class="latest_post_image">
-										<a href="#"><img style="width: 200px;border-radius:10px;"src="{% static 'images/immg35.jpg' %}" alt=""></a>
-									</div>
-									<div class="latest_post_content">
-										<div class="latest_post_title trans_200"><a href="#">How to pick your Career</a></div>
-										<div class="latest_post_meta">
-											<div class="latest_post_author trans_200"><a href="#">by Jane Smith</a></div>
-											<div class="latest_post_date trans_200"><a href="#">Aug 25, 2020</a></div>
-										</div>
-									</div>
-								</li>
-
 
 							</ul>
 						</div>
