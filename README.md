@@ -1,6 +1,6 @@
 # Adhama- This is my first ever project which is a Web app that can work in building digital skills such as Digital marketing, Web development etc
 
-It is built using technologies such as Python(Django framework) for the backend,HTML ,CSS and Javascript Libraries
+It is built using technologies such as Python(Django framework) for the backend,HTML5, CSS3 and Javascript(jQuery)/Libraries
 
 The aim of the project was to help the youth in tapping the unused digital space that is unused to provide for digital skills that are job market oriented looking to the future
 
